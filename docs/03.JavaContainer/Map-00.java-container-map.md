@@ -20,6 +20,10 @@
 > HashMap class is roughly equivalent to Hashtable, except that it is unsynchronized and permits nulls.
 > ```
 
+java中提供的Map的实现主要有HashMap、LinkedHashMap、WeakHashMap、TreeMap、ConcurrentHashMap、ConcurrentSkipListMap，另外还有两个比较古老的Map实现HashTable和Properties。
+
+![](https://raw.githubusercontent.com/hyman213/FigureBed/master/2019/07/20190713232423.png)
+
 ## Map 接口
 
 Map 的定义如下：

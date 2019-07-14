@@ -382,11 +382,7 @@ public boolean removeAll(Collection<?> c) {
 }
 ```
 
-
-
 ### 序列化&反序列化
-
-
 
 ```java
 private void writeObject(java.io.ObjectOutputStream s)
@@ -466,13 +462,7 @@ elementData定义为transient的优势，自己根据size序列化真实的元�
 
 （8）ArrayList支持求交集，调用retainAll(Collection c)方法即可；
 
-（7）ArrayList支持求单向差集，调用removeAll(Collection c)方法即可；
-
-
-
-
-
-
+（9）ArrayList支持求单向差集，调用removeAll(Collection c)方法即可；
 
 ## 参考
 

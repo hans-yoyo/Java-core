@@ -4,7 +4,13 @@
 
 ## List 概述
 
-`List` 接口定义：
+List中的元素是有序的、可重复的，主要实现方式有动态数组和链表。
+
+![](https://raw.githubusercontent.com/hyman213/FigureBed/master/2019/07/20190713232157.png)
+
+java中提供的List的实现主要有ArrayList、LinkedList、CopyOnWriteArrayList，另外还有两个古老的类Vector和Stack。
+
+List` 接口定义：
 
 ```java
 public interface List<E> extends Collection<E>
