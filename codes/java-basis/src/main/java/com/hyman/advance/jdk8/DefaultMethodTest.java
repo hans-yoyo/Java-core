@@ -1,15 +1,12 @@
 package com.hyman.advance.jdk8;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @Description:
  * @author: Hyman
- * @date: 2019/06/03 21:59
+ * @date: 2019/07/16 08:18
  * @version： 1.0.0
  */
-public class Test {
+public class DefaultMethodTest {
 
     public static void main(String[] args) {
         Formula formula = new Formula() {
@@ -18,11 +15,11 @@ public class Test {
                 return sqrt(a * 100);
             }
         };
-
-        List list = new ArrayList();
-        System.out.println(formula.calculate(100));
+        System.out.println(formula.calculate(100));//100.0
         // 直接使用默认的sqrt方法
-        System.out.println(formula.sqrt(64));
+        System.out.println(formula.sqrt(64));//8.0
+
+        Formula.staticMethod();
     }
 
 }
