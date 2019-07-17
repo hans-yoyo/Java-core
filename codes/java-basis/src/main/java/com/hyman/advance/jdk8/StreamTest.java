@@ -1,5 +1,6 @@
 package com.hyman.advance.jdk8;
 
+import java.time.Clock;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -68,6 +69,8 @@ public class StreamTest {
         Stream.concat(Stream.of(1,4,5), Stream.of(2,3,6,4))
                 .forEach(System.out::print);
 
+        "abc".join("_","def");
+
         Stream.of("one", "two", "three", "four")
                 .filter(e -> e.length() > 3)
                 .peek(e -> System.out.println("Filtered value: " + e))
@@ -75,7 +78,11 @@ public class StreamTest {
                 .peek(e -> System.out.println("Mapped value: " + e))
                 .collect(Collectors.toList());
 
-        Optional
+        Optional<String> abc = Optional.of("abc");
+        System.out.println(abc.get());
+
+        // Date Api
+        Clock clock = Clock.systemUTC();
 
     }
 
